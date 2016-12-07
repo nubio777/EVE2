@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="EVE_artifact">
+    <output-path>$PROJECT_DIR$/../out/COE/artifacts/EVE_artifact</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="EVE" />
+          <element id="module-output" name="WUTI" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="dir-copy" path="$PROJECT_DIR$/EVE/lib/bd/driversMySQL" />
+          <element id="dir-copy" path="$PROJECT_DIR$/EVE/lib/bd/hibernate_impl" />
+          <element id="dir-copy" path="$PROJECT_DIR$/EVE/lib/bd/jpa_def" />
+          <element id="dir-copy" path="$PROJECT_DIR$/EVE/lib/log4j" />
+          <element id="file-copy" path="$PROJECT_DIR$/EVE/lib/json-simple-1.1.1.jar" />
+        </element>
+        <element id="dir-copy" path="$PROJECT_DIR$/EVE/conf" />
+      </element>
+      <element id="dir-copy" path="$PROJECT_DIR$/EVE/web" />
+    </root>
+  </artifact>
+</component>

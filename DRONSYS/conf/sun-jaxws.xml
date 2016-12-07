@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<endpoints xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime" version="2.0">
+
+    <endpoint name="CreditCardWebService"
+              implementation="coe.dronsys.main.pages.shop.model.webservices.CreditCardWebService"
+              url-pattern="/CreditCardWebService"/>
+
+
+    <endpoint name="HelpWebService"
+              implementation="coe.dronsys.main.pages.shop.model.webservices.HelpWebService"
+              url-pattern="/HelpWebService"/>
+</endpoints>

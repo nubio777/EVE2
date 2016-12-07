@@ -1,0 +1,27 @@
+/***********************/
+/*  General            */
+/***********************/
+
+.header {
+    margin: 50px 0 0 265px;
+    padding: 20px 140px 20px 0;
+    width: 600px;
+    color: #00B0F0;
+    overflow: auto;
+    background: right url("../img/xs_blue4.png") no-repeat;
+}
+
+.mainTitle {
+    float: left;
+    text-align: right;
+    width: 100%;
+    font-size: 62px;
+}
+
+.secondaryTitle {
+    font-size: 28px;
+    width: 100%;
+    text-align: right;
+    margin-top: 28px;
+}
+

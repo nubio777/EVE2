@@ -1,0 +1,10 @@
+Installation:
+
+This application can be installed according to the following script:
+
+1) You do not need to install or use any database. All data consumed by the application are read from a single file (I've provided an example of this file within the "data" directory)
+2) That file should be unzipped and placed it somewhere in the file system. Make sure it is readable by the user "tomcat"
+3) Open conf/lsm.properties and update the value of "DATA_SOURCE" within that file (according to the location of the previous file).
+4) Go to "webapps" directory in Tomcat installation. Create a directory called "lsm"
+5) Compile the Dronsys module within Intellij. Copy the contents of the generated "LSM_artifact" onto the "lsm" directory previously created.
+6) Start up Tomcat. The application can be accessed from the URL http://tomcat_ip/lsm/view/main.jsp?view=Map&team=-1

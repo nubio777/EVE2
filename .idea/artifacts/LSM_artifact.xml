@@ -1,0 +1,30 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="LSM_artifact">
+    <output-path>$PROJECT_DIR$/../out/COE/artifacts/LSM_artifact</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="WUTI" />
+          <element id="module-output" name="LSM" />
+          <element id="file-copy" path="$PROJECT_DIR$/LSM/conf/lsm.properties" />
+          <element id="file-copy" path="$PROJECT_DIR$/LSM/conf/log4j.properties" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="driversMySQL" module-name="WUTI" />
+          <element id="library" level="module" name="hibernate_impl" module-name="WUTI" />
+          <element id="library" level="module" name="jpa_def" module-name="WUTI" />
+          <element id="library" level="module" name="wicket 7.1" module-name="WUTI" />
+          <element id="file-copy" path="$PROJECT_DIR$/LSM/lib/objectplanetPngEncoder.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/LSM/lib/commons-io-2.4.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WUTI/lib/log4j/log4j-1.2.16.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WUTI/lib/log4j/slf4j-api-1.6.4.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WUTI/lib/log4j/slf4j-log4j12-1.6.4.jar" />
+        </element>
+        <element id="file-copy" path="$PROJECT_DIR$/LSM/conf/web.xml" />
+      </element>
+      <element id="dir-copy" path="$PROJECT_DIR$/LSM/web" />
+      <element id="dir-copy" path="$PROJECT_DIR$/WUTI/web" />
+      <element id="file-copy" path="$PROJECT_DIR$/LSM/conf/web.xml" />
+    </root>
+  </artifact>
+</component>

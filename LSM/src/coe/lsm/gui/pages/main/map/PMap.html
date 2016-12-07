@@ -1,0 +1,140 @@
+<wicket:head>
+
+    <style type="text/css">
+
+        #mapHeader {
+            position: fixed;
+            z-index: 300;
+            background: white;
+        }
+
+        #map {
+            position: absolute;
+            top: 150px;
+        }
+
+        #mapServices {
+            position: fixed;
+            z-index: 200;
+            background: rgba(255, 255, 255, 0.9);
+            top: 150px;
+            right: 0;
+        }
+
+        #title {
+            color: #202BB4;
+            padding: 5px 15px;
+            text-align: center;
+            border: 2px solid #202BB4;
+            background: rgba(255, 255, 255, 0.8);
+            cursor: move;
+            overflow: hidden;
+            display: none;
+        }
+
+        #teamName {
+            font-size: 54px;
+        }
+
+        #activeServices {
+            padding-top: 5px;
+            font-size: 20px;
+        }
+
+        #clickInfo {
+            padding-top: 5px;
+            font-size: 14px;
+        }
+
+        #infoPopup {
+            background: rgba(255, 255, 255, 1);
+            border-radius: 10px 10px 10px 10px;
+            box-shadow: 0 0 25px 5px #999;
+            display: none;
+            width: 450px;
+            padding: 25px;
+            cursor: move;
+        }
+
+        #infoPopup .b-close {
+            width: 25px;
+            height: 20px;
+            float: right;
+            margin: -15px -10px 0 0;
+            cursor: pointer;
+        }
+
+        #infoPopup .infoContainer {
+            overflow: auto;
+            background: rgba(255, 255, 255, 0.8);
+            float: left;
+            width: 400px;
+            cursor: auto;
+            margin-top: 10px;
+        }
+
+        #infoPopup .item {
+            float: left;
+            text-align: right;
+            width: 60px;
+            margin-right: 20px;
+            color: #202BB4;
+            font-size: 16px;
+        }
+
+        #infoPopup .infoLine {
+            width: 100%;
+            padding: 3px 10px;
+            overflow: auto;
+            font-size: 14px;
+        }
+
+        #infoPopup .message {
+            overflow: auto;
+        }
+    </style>
+
+
+</wicket:head>
+
+<wicket:panel>
+    <!--The height, width and scroll control for these canvas are set from javascript-->
+    <canvas id="mapHeader"></canvas>
+    <canvas id="map"></canvas>
+    <canvas id="mapServices"></canvas>
+
+    <div id="title">
+        <div id="teamName"></div>
+        <div id="activeServices"></div>
+        <div id="clickInfo">(click on image for info)</div>
+    </div>
+
+
+    <div id="infoPopup">
+        <a class="b-close"><img src="web/bpopup/close-button.png" width="30"></a>
+
+        <div class="infoContainer">
+            <div class="infoLine">
+                <div class="item">Status:</div>
+                <div id="status"></div>
+            </div>
+            <div class="infoLine">
+                <div class="item">Service:</div>
+                <div id="service"></div>
+            </div>
+            <div class="infoLine">
+                <div class="item">Host:</div>
+                <div id="host"></div>
+            </div>
+            <div class="infoLine">
+                <div class="item">Time:</div>
+                <div id="time"></div>
+            </div>
+            <div class="infoLine">
+                <div class="item">Message:</div>
+                <div id="message" class="message"></div>
+            </div>
+        </div>
+    </div>
+
+</wicket:panel>

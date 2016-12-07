@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://webservices.model.dronsis.coe/" xmlns:tns="http://webservices.model.dronsis.coe/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="getHelpText" type="tns:getHelpText"/>
+
+  <xs:element name="getHelpTextResponse" type="tns:getHelpTextResponse"/>
+
+  <xs:complexType name="getHelpText">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getHelpTextResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

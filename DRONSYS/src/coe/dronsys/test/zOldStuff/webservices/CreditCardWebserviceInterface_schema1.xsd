@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://webservices.model.dronsis.coe/" xmlns:tns="http://webservices.model.dronsis.coe/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="createCreditCards" type="tns:createCreditCards"/>
+
+  <xs:element name="createCreditCardsResponse" type="tns:createCreditCardsResponse"/>
+
+  <xs:element name="getCreditCards" type="tns:getCreditCards"/>
+
+  <xs:element name="getCreditCardsResponse" type="tns:getCreditCardsResponse"/>
+
+  <xs:complexType name="getCreditCards">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getCreditCardsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:creditCardEntity" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="creditCardEntity">
+    <xs:complexContent>
+      <xs:extension base="tns:basicEntity">
+        <xs:sequence>
+          <xs:element name="creditCardNumber" type="xs:decimal" minOccurs="0"/>
+          <xs:element name="cvs" type="xs:int"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="basicEntity">
+    <xs:sequence>
+      <xs:element name="id" type="xs:long"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="createCreditCards">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+      <xs:element name="arg1" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="createCreditCardsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

@@ -1,0 +1,39 @@
+<wicket:head>
+
+    <style type="text/css">
+        .chartTitle {
+            float: left;
+            margin: -20px 40px 0 25px ;
+        }
+
+        h5 {
+            margin: 0 0 40px 0;
+        }
+
+        .chartContainer {
+            overflow: auto;
+            height: 750px;
+            width: 1100px;
+            margin: 40px 0;
+        }
+    </style>
+
+</wicket:head>
+
+<wicket:panel>
+
+
+    <div class="chartTitle">
+        <h2>Time Evolution for <span wicket:id="teamNumber">[team 7]</span></h2>
+        <h5>
+            <ol type="i">
+                <li> Information will update automatically every minute</li>
+                <li>Place the pointer over the graph for further details</li>
+            </ol>
+        </h5>
+
+    </div>
+
+    <div class="chartContainer" id="chart"></div>
+
+</wicket:panel>

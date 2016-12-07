@@ -1,0 +1,38 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="DRONSYS_artifact">
+    <output-path>$PROJECT_DIR$/../out/COE/artifacts/DRONSYS_artifact</output-path>
+    <root id="root">
+      <element id="directory" name="js">
+        <element id="dir-copy" path="$PROJECT_DIR$/DRONSYS/web/js" />
+      </element>
+      <element id="directory" name="css">
+        <element id="dir-copy" path="$PROJECT_DIR$/DRONSYS/web/css" />
+      </element>
+      <element id="directory" name="img">
+        <element id="dir-copy" path="$PROJECT_DIR$/DRONSYS/web/img" />
+      </element>
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="DRONSYS" />
+          <element id="module-output" name="WUTI" />
+          <element id="directory" name="META-INF">
+            <element id="file-copy" path="$PROJECT_DIR$/DRONSYS/conf/META-INF/persistence.xml" />
+          </element>
+          <element id="file-copy" path="$PROJECT_DIR$/DRONSYS/conf/ShopSite_Frequently_Asked_Questions.html" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="batik-1" module-name="DRONSYS" />
+          <element id="library" level="module" name="web services" module-name="DRONSYS" />
+          <element id="library" level="module" name="driversMySQL" module-name="WUTI" />
+          <element id="library" level="module" name="hibernate_impl" module-name="WUTI" />
+          <element id="library" level="module" name="jpa_def" module-name="WUTI" />
+          <element id="file-copy" path="$PROJECT_DIR$/WUTI/lib/log4j/log4j-1.2.16.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WUTI/lib/log4j/slf4j-api-1.6.4.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WUTI/lib/log4j/slf4j-log4j12-1.6.4.jar" />
+          <element id="library" level="module" name="wicket 7.1" module-name="WUTI" />
+        </element>
+        <element id="file-copy" path="$PROJECT_DIR$/DRONSYS/conf/web.xml" />
+      </element>
+    </root>
+  </artifact>
+</component>

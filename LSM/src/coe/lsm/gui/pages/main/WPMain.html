@@ -1,0 +1,75 @@
+<wicket:head>
+    <style>
+        .header {
+            overflow: auto;
+            width: 100%;
+            background-color: #d6d7dd;
+            height: 100px;
+            position: fixed;
+            top: 0;
+            z-index: 300;
+        }
+
+        h1 {
+            margin-bottom: -20px !important;
+        }
+
+        .options {
+            float: left;
+            font-size: 18px;
+            margin: 30px 0px -20px 35px;
+        }
+
+        .option {
+            float: left;
+            margin: 0 20px;
+        }
+
+        select {
+            border-radius: 6px;
+            padding: 2px 0 1px 6px;
+            margin: 0 10px 0 15px;
+            background-color: #f5f5f5;
+            border: 1px solid #AAAAAA;
+        }
+
+        .content {
+            width: 100%;
+            clear: both;
+            padding-top: 100px;
+        }
+
+        .infoForLogout {
+            font-size: 14px;
+            margin: 30px 0 0 80px;
+            overflow: auto;
+            width: 280px;
+            float: left;
+        }
+
+    </style>
+
+</wicket:head>
+
+<wicket:extend>
+
+
+    <div class="header">
+        <div class="options">
+            <form wicket:id="form">
+                <div class="option"><label for="view">View</label> <select wicket:id="view" onchange="submit();"></select></div>
+                <div class="option"><label for="team">Team</label> <select wicket:id="team" onchange="submit();"></select></div>
+            </form>
+        </div>
+        <div class="infoForLogout">
+            (You are logged in as team <b>'<span wicket:id="teamDescription">[team x]</span>'</b>. <a wicket:id="logout">Logout</a>)
+        </div>
+    </div>
+
+
+    <div class="content">
+        <div wicket:id="mainPanel"></div>
+    </div>
+
+
+</wicket:extend>

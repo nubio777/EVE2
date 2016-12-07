@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="tomcat 8.0" level="application_server_libraries" />
+    <orderEntry type="module-library" exported="" scope="PROVIDED">
+      <library name="wicket 7.1">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/lib/wicket 7.1/final 7.1/bin" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/lib/wicket 7.1/final 7.1/src/wicket-core/src/main/java" />
+          <root url="file://$MODULE_DIR$/lib/wicket 7.1/final 7.1/src/wicket-devutils/src/main/java" />
+          <root url="file://$MODULE_DIR$/lib/wicket 7.1/final 7.1/src/wicket-extensions/src/main/java" />
+          <root url="file://$MODULE_DIR$/lib/wicket 7.1/final 7.1/src/wicket-request/src/main/java" />
+          <root url="file://$MODULE_DIR$/lib/wicket 7.1/final 7.1/src/wicket-util/src/main/java" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$/lib/wicket 7.1/final 7.1/bin" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="driversMySQL">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/lib/bd/driversMySQL" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/lib/bd/driversMySQL" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="hibernate_impl">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/lib/bd/hibernate_impl" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/lib/bd/hibernate_impl" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="jpa_def">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/lib/bd/jpa_def" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/lib/bd/jpa_def" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/lib/log4j" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/lib/log4j" recursive="false" />
+      </library>
+    </orderEntry>
+  </component>
+</module>
+

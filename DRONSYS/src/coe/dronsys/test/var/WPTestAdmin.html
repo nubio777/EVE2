@@ -1,0 +1,101 @@
+<wicket:extend>
+
+    <!-- Intro
+    ============================================= -->
+    <section class="site-section site-section-light site-section-top themed-background-dark">
+        <h1 class="text-center animation-slideDown"><i class="fa fa-wrench"></i> <strong>Administration</strong></h1>
+
+        <h3>&nbsp;</h3>
+    </section>
+
+
+    <!-- Main form
+    ============================================= -->
+    <section class="site-content site-section">
+        <div class="container">
+            <div class="row">
+
+                <!--Address-->
+                <div class="col-sm-6 col-md-4 site-block">
+                    <div class="site-block">
+                        <h3 class="h3 site-heading"><strong>Admin</strong> items</h3>
+                        <ul>
+                            <li><a href="javascript:void(0)">Users administration</a></li>
+                            <li><a href="javascript:void(0)">Other 1</a></li>
+                            <li><a href="javascript:void(0)">Other 2</a></li>
+                        </ul>
+                    </div>
+
+                    <br>
+
+                    <div class="site-block">
+                        <h3 class="h3 site-heading"><strong>Reports</strong></h3>
+
+                        <ul>
+                            <li><a href="javascript:void(0)">Report</a></li>
+                            <li><a href="javascript:void(0)">Other 1</a></li>
+                            <li><a href="javascript:void(0)">Other 2</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!--User administration-->
+                <div class="col-sm-6 col-md-6 site-block">
+                    <h3 class="h2 site-heading"><strong>Users</strong> administration</h3>
+
+                    <!--Select user-->
+                    <div class="form-group">
+                        <form wicket:id="userForm">
+                            <label for="user">Select user</label>
+                            <select wicket:id="userSelection" id="user" class="form-control" size="1">
+                                <option value="0">Please select</option>
+                                <option value="1">Option #1</option>
+                                <option value="2">Option #2</option>
+                            </select>
+                        </form>
+                    </div>
+
+
+                    <!--Do something with the selected user-->
+                    <div wicket:id="formContainer">
+
+                        <form wicket:id="mainForm" method="post" id="form-contact">
+
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input wicket:id="name" type="text" id="name" name="nombre" class="form-control input-lg" placeholder="Name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">E-Mail</label>
+                                <input wicket:id="email" type="email" id="email" name="email" class="form-control input-lg" placeholder="Address">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="creditCard">Credit card</label>
+                                <input wicket:id="creditCard" type="text" id="creditCard" class="form-control input-lg" placeholder="Credit card">
+                            </div>
+
+                            <div class="form-group">
+                                <button wicket:id="update" type="submit" class="btn btn-lg btn-primary">Update data</button>
+                                <button wicket:id="delete" type="submit" class="btn btn-lg btn-danger" style="margin-left: 40px">Delete user</button>
+                            </div>
+
+                            <div wicket:id="error" class="errorPanel"/>
+
+                        </form>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</wicket:extend>

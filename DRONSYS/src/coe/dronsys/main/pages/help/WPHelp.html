@@ -1,0 +1,52 @@
+<wicket:head>
+
+    <!--For this page-->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+</wicket:head>
+
+
+<wicket:extend>
+
+    <!-- Intro
+    ============================================= -->
+    <section class="site-section site-section-light site-section-top themed-background-dark">
+        <div class="container">
+            <h1 class="text-center animation-slideDown"><i class="fa fa-support"></i> <strong>Helpdesk</strong></h1>
+
+            <h2 class="h3 text-center animation-slideUp push">How can we help you?</h2>
+
+            <div class="text-center">
+                <form action="help" method="get" class="form-horizontal">
+                    <div class="form-group">
+
+                        <div class="col-md-8 col-md-offset-2">
+                            <label class="sr-only" for="helpdesk-question">Search</label>
+
+                            <div class="input-group input-group-lg">
+                                <input type="text" id="helpdesk-question" name="search" class="form-control"
+                                       placeholder="Have a question? Ask or enter a search term..">
+
+                                <div class="input-group-btn">
+                                    <button type="submit" value="submit" class="btn btn-primary"><i class="fa fa-search"></i> Search
+                                    </button>
+                                </div>
+
+                            </div>
+
+                            <div class="input-group input-group-lg">
+                                <h3 wicket:id="results" class="h3 text-center animation-slideUp push">[search results]</h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</wicket:extend>
+

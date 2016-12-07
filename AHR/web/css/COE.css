@@ -1,0 +1,230 @@
+/***********************/
+/*  General            */
+/***********************/
+body {
+    font-family: Helvetica, Arial, Tahoma, sans-serif;
+    font-size: 12px;
+    color: #474747;
+    overflow: scroll;
+}
+
+/***********************/
+/*  Secciones, títulos */
+/***********************/
+div.seccion {
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+div.seccion .detalle {
+    background-color: #1ca5ff;
+    float: left;
+    height: 18px;
+    margin: 2px 12px 0 0;
+    width: 15px;
+}
+
+div.bloqueIndentado {
+    margin: 0 0 0 30px;
+}
+
+div.bloqueResaltado {
+    background: #dadada;
+    margin-top: 20px;
+    padding: 10px 0 10px 20px;
+    font-size: 16px;
+    overflow: auto;
+}
+
+div.titulo1 {
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+}
+
+div.titulo2 {
+    font-size: 18px;
+    padding: 7px 0 7px 0;
+}
+
+/***********************/
+/*  Circulos           */
+/***********************/
+div.circulo {
+    border-radius: 50%;
+    width: 9px;
+    height: 9px;
+}
+
+div.circulo.gris {
+    background: rgba(32, 32, 33, 0.52);
+}
+
+div.circulo.verde {
+    background: #4e9766;
+}
+
+div.circulo.ambar {
+    background: #ca890e;
+}
+
+div.circulo.rojo {
+    background: #ff524a;
+}
+
+/******************************************/
+/*      Enlaces y botones                 */
+/******************************************/
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #235369;
+}
+
+a:visited {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #41B4E0;
+}
+
+a.botonSencilloOn {
+    display: block;
+    padding: 6px 25px 3px 25px;
+    text-align: center;
+    background-color: #41B4E0;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+a.botonSencilloOff {
+    background-color: #235369;
+    color: #d5e0e0;
+    cursor: pointer;
+    padding: 6px 25px 3px 25px;
+    text-align: center;
+    float: left;
+    border-radius: 5px;
+}
+
+a.botonSencilloOff:hover {
+    background: #41B4E0;
+    color: white;
+}
+
+/******************************************/
+/*      Pestañas                          */
+/******************************************/
+
+div.pestanias {
+    overflow: auto;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #3c8ee0;
+}
+
+div.pestanias a {
+    float: left;
+    font-size: 17px;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: auto;
+    padding: 0px 10px 5px 10px;
+    margin: 5px 15px 0px 0px;
+    color: #3d5e79;
+}
+
+div.pestanias a:hover {
+    color: #3c8ee0;
+    font-weight: normal;
+    border-bottom: 3px solid #3c8ee0;
+}
+
+div.pestanias a.seleccionado {
+    color: #3c8ee0;
+    border-bottom: 3px solid #3c8ee0;
+}
+
+div.contenidoPestanias {
+    border: 2px solid #D8E3E2;
+    border-radius: 5px;
+    padding: 5px;
+    overflow: auto;
+}
+
+div.subtituloPestania {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/*************************************/
+/*     Formularios                   */
+/*************************************/
+.feedback {
+    color: #B41C35;
+    margin: 5px 0 10px 0;
+}
+
+.formulario {
+}
+
+.formulario .botonera {
+    padding: 20px 0;
+    float: left;
+    text-align: center;
+    width: 100%;
+    overflow: auto;
+}
+
+.formulario .etiquetaArriba {
+    float: left;
+    text-align: left;
+    width: 100%;
+}
+
+.formulario .etiquetaALaIzda {
+    float: left;
+    padding: 1px 20px 1px 0;
+    text-align: right;
+    width: 170px;
+}
+
+.formulario textarea {
+    border: 1px solid #adc1bd;
+}
+
+.formulario input {
+    border: 1px solid #adc1bd;
+}
+
+.formulario select {
+    border: 1px solid #adc1bd;
+}
+
+.formulario input[type=radio] {
+    width: 25px;
+    border: 1px solid #adc1bd;
+}
+
+.formulario input[type=checkbox] {
+    width: 25px;
+    border: 1px solid #adc1bd;
+}
+
+.formulario .etiquetaPostCampo {
+    float: left;
+    padding-left: 8px;
+}
+
+/*************************************/
+/*     Iconos                        */
+/*************************************/
+
+.icono {
+    margin-right: 5px;
+    font-size: 11px;
+}
+
+

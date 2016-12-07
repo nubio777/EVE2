@@ -1,0 +1,55 @@
+<wicket:extend>
+
+    <!-- Intro
+    ============================================= -->
+    <div class="media-container">
+
+        <section class="site-section site-section-light site-section-top">
+            <div class="container text-center">
+                <h1 class="animation-slideDown"><strong>Welcome to our Online Store!</strong></h1>
+
+                <h2 class="h3 animation-slideUp hidden-xs">Explore over 5.000 products!</h2>
+            </div>
+        </section>
+
+        <!-- For best results use an image with a resolution of 2560x279 pixels -->
+        <img src="img/placeholders/headers/store_home.jpg" alt="" class="media-image animation-pulseSlow">
+    </div>
+
+
+    <!-- Product list
+    ============================================= -->
+    <section class="site-content site-section">
+        <div class="container">
+            <div class="row">
+
+                <!-- Products -->
+                <div class="col-md-8 col-lg-9">
+
+                    <div class="row store-items">
+
+                        <div wicket:id="element" class="col-md-4 visibility-none" data-toggle="animation-appear" data-animation-class="animation-fadeInQuick" data-element-offset="-100">
+
+                            <div class="store-item">
+                                <div class="store-item-image">
+                                    <img wicket:id="productPhoto" alt="" class="img-responsive product_image">
+                                </div>
+
+                                <div class="store-item-info clearfix">
+                                    <span class="store-item-price themed-color-dark pull-right">&euro; <span wicket:id="productPrice"></span> </span>
+                                    <span><strong wicket:id="productName" class="text-muted">Sunglasses</strong></span><br>
+                                    <small><a wicket:id="addToCart"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</wicket:extend>

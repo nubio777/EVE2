@@ -1,0 +1,66 @@
+/*
+ *  Document   : dronsis.css
+ *  Author     : Jesús Rubio
+ *  Description: Some particular css styles
+ *
+ */
+
+.errorPanel {
+    color: indianred !important;
+}
+
+.errorPanel ul {
+    list-style-type: circle;
+}
+
+.errorPanel ul > li
+{
+    color: indianred;
+}
+
+.dronsys_row_items {
+    margin-bottom: 0 !important;
+}
+
+.site-nav a {
+    text-transform: none !important;
+}
+
+.product_image {
+    width: 250px !important;
+    height: 150px !important;
+}
+
+.site-block {
+    margin-bottom: 9px !important;
+}
+
+.site-heading {
+    margin: 0 0 30px 0 !important;
+}
+
+.site-section {
+    padding: 20px 0 0 0 !important;
+}
+
+.site-section-top {
+    padding-top: 105px !important;
+}
+
+.media-container {
+    height: 250px !important;
+}
+
+.media-image {
+    height: 250px !important;
+}
+
+.media-container {
+    height: 250px !important;
+}
+
+
+
+body {
+    background-color: white !important;
+}

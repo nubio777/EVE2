@@ -1,0 +1,10 @@
+Installation:
+
+This application can be installed according to the following lines:
+
+1) Install mysql 14 or higher (a previous installation can be reused). Create a database called "ahr". Start up mysql.
+2) Go to the application and execute the main method of the ahr.DataBase class. It will populate the database (please review mysqlURL variable at the top of the class)
+3) Install Tomcat 7 or higher (a previous installation can be reused).
+4) Go to "webapps" directory in Tomcat installation. Create a directory called "ahr"
+5) Compile the AHR module within Intellij. Copy the contents of the generated "AHR_artifact" onto the "ahr" directory previously created.
+6) Start up Tomcat. The application should be located at http://tomcat_ip/ahr/jsp/login.jsp

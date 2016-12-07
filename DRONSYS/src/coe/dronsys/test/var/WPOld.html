@@ -1,0 +1,110 @@
+
+<wicket:extend>
+
+    <!-- Form Header
+    ============================================= -->
+    <br/><br/><br/><br/><br/>
+
+    <div class="content-header" style="background: #394263;">
+        <div class="header-section">
+            <h1>
+                <i class="gi gi-notes_2"></i>Test user admin<br>
+                <small>Testing user admin!</small>
+            </h1>
+        </div>
+    </div>
+
+
+    <!-- Form
+    ============================================= -->
+    <div class="row" style="background: #f5e4d4;">
+        <div class="col-md-6">
+            <!-- Basic Form Elements Block -->
+            <div class="block">
+
+                <br/>
+                <!-- Form Title -->
+                <div class="block-title">
+                    <!--<div class="block-options pull-right">-->
+                    <!--<a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default toggle-bordered enable-tooltip" data-toggle="button"-->
+                    <!--title="Toggles .form-bordered class">No Borders</a>-->
+                    <!--</div>-->
+                    <h2><strong>&nbsp;&nbsp;Testing</strong> basic administration</h2>
+                </div>
+
+                <br/><br/>
+                <!-- The form elements-->
+                <!--<form class="form-horizontal form-bordered">-->
+                <form wicket:id="form" class="form-horizontal form-bordered">
+
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="example-select">Select user</label>
+
+                        <div class="col-md-9">
+                            <select wicket:id="userSelection" id="example-select" name="example-select" class="form-control" size="1">
+                                <!--<select id="example-select" name="example-select" class="form-control" size="1">-->
+                                <option value="0">Please select</option>
+                                <option value="1">Option #1</option>
+                                <option value="2">Option #2</option>
+                                <option value="3">Option #3</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                    </div>
+
+                    <div wicket:id="fieldsContainer">
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="example-text-input">User name</label>
+
+                            <div class="col-md-9">
+                                <input wicket:id="name" type="text" id="example-text-input" name="example-text-input" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="example-text-input">Email</label>
+
+                            <div class="col-md-9">
+                                <input wicket:id="mail" type="text" id="example-text-input" name="example-text-input" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="example-text-input">Password</label>
+
+                            <div class="col-md-9">
+                                <input wicket:id="passwd" type="text" id="example-text-input" name="example-text-input" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="example-text-input">Credit card</label>
+
+                            <div class="col-md-9">
+                                <input wicket:id="card" type="text" id="example-text-input" name="example-text-input" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="example-text-input">Active</label>
+
+                            <div class="col-xs-9">
+                                <label class="switch switch-info"><input  wicket:id="active"  type="checkbox" checked=""><span></span></label>
+                                <span class="help-block">Look out! </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+</wicket:extend>
+

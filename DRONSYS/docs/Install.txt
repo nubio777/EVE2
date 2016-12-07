@@ -1,0 +1,10 @@
+Installation:
+
+This application can be installed according to the following script:
+
+1) Install mysql 14 or higher (a previous installation can be reused). Create a database called "dronsys". Start up mysql.
+2) You do not need to create any table or populate the database with data. The application will do it automatically the first time it runs.
+3) Install Tomcat 7 or higher (a previous installation can be reused).
+4) Go to "webapps" directory in Tomcat installation. Create a directory called "dronsys"
+5) Compile the Dronsys module within Intellij. Copy the contents of the generated "DRONSYS_artifact" onto the "dronsys" directory previously created.
+6) Start up Tomcat. The application can be accessed from the URL http://tomcat_ip/dronsys/home

@@ -1,0 +1,108 @@
+<wicket:panel>
+    <section class="site-content site-section">
+        <div class="container">
+            <div class="row">
+                <!--<div class="col-sm-12 col-sm-offset-1 col-lg-12 col-lg-offset-1 site-block">-->
+                <div>
+
+
+                    <form wicket:id="form" action="signup.html" method="post" id="form-sign-up" class="form-vertical">
+
+                        <div class="col-xs-6 col-lg-6">
+                            <div class="row h2">Your <strong>data</strong></div>
+                            <div class="row">
+
+                                <!-- Name -->
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <div class="input-group" style="margin-top: 5px;">
+                                            <span class="input-group-addon"><i class="gi gi-user"></i></span>
+                                            <input wicket:id="name" type="text" id="register-firstname" name="register-firstname" class="form-control input-lg"
+                                                   placeholder="First name">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="form-group" style="margin-top: 5px;">
+                                    <div class="col-xs-12">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="gi gi-envelope"></i></span>
+                                            <input wicket:id="email" type="email" id="register-email" name="register-email" class="form-control input-lg"
+                                                   placeholder="Email">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Password -->
+                                <div class="form-group" style="margin-top: 5px;">
+                                    <div class="col-xs-12">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="gi gi-asterisk"></i></span>
+                                            <input wicket:id="passwd" type="password" id="register-password" name="register-password"
+                                                   class="form-control input-lg" placeholder="Password">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Credit card -->
+                                <div class="form-group" style="margin-top: 5px;">
+                                    <div class="col-xs-12">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="gi gi-credit-card"></i></span>
+                                            <input wicket:id="creditCard" type="text" id="register-credit" name="register-credit" class="form-control input-lg"
+                                                   placeholder="Credit card number">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row"></div>
+                                <div class="row h2">&nbsp;Your <strong>picture</strong></div>
+                                <div class="row"></div>
+
+                                <!--User picture -->
+                                <div class="form-group">
+                                    <div class="col-xs-10">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="gi gi-picture"></i></span>
+                                            <img wicket:id="userPicture" alt="Choose your profile picture" height="150" class="img animation-fadeIn" data-toggle="animation-appear"
+                                                 data-animation-class="animation-fadeIn"
+                                                 data-element-offset="-16">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Picture upload-->
+                                <div class="form-group">
+                                    <div class="col-xs-10">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="gi gi-photo-album"></i></span>
+                                            <input wicket:id="pictureUpload" type="file"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <!-- Send -->
+                            <div class="form-group form-actions">
+                                <div class="col-xs-6 text-right">
+                                    <br><br><a wicket:id="send" type="submit" class="btn btn-primary"><i class="fa fa-save"></i> &nbsp;Save all data</a><br>&nbsp;
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </form>
+
+
+                    <div wicket:id="error" class="errorPanel"/>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</wicket:panel>

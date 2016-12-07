@@ -1,0 +1,136 @@
+<wicket:head>
+    <script>
+    </script>
+
+    <style type="text/css">
+        .current {
+        }
+
+        .current .chartHeader {
+            overflow: auto;
+        }
+
+        .current .title {
+            float: left;
+        }
+
+        .current .statuses {
+            float: left;
+            overflow: auto;
+            margin: 20px 0 0 20px ;
+        }
+
+        .current h5 {
+            margin: 0 0 4px 0;
+        }
+
+        .current .space {
+            margin: 0 5px 0 0;
+        }
+
+        .current .details {
+            overflow: auto;
+            margin: 25px 0 0 45px;
+        }
+
+        .current .detail {
+            overflow: auto;
+            width: 100%;
+            margin: 0 0 5px 0;
+        }
+
+        .current .host {
+            float: left;
+            width: 120px;
+        }
+
+        .current .services {
+            overflow: auto;
+        }
+
+        .current .hostName {
+            font-size: 16px;
+            padding: 0 5px;
+            border: 1px solid;
+            border-radius: 4px;
+            color: white;
+            background-color: gray;
+        }
+
+        .current .teamLine {
+            overflow: auto;
+        }
+
+        .current .contents {
+            overflow: auto;
+        }
+
+        .current .teamNr {
+            float: left;
+            width: 75px;
+        }
+    </style>
+</wicket:head>
+
+<wicket:panel>
+    <div class="current">
+
+        <div class="chartHeader">
+
+            <div class="title">
+                <h2> Current Services Status for <span wicket:id="teamNumber">[team 7]</span></h2>
+                <h5>
+                    <ol type="i">
+                        <li> Information will update automatically every minute</li>
+                        <li>Click on the status buttons for details</li>
+                    </ol>
+                </h5>
+            </div>
+
+            <div wicket:id="statuses" class="statuses">
+                <div wicket:id="values" class="btn-group space" role="group" aria-label="...">
+                    <button wicket:id="value" type="button"><span class="badge" wicket:id="number">[7]</span>&nbsp;
+                        <span wicket:id="name">[OK]</span></button>
+                </div>
+            </div>
+
+        </div>
+
+        <div wicket:id="details" class="details">
+
+            <h4>
+                <div class="host">Host</div>
+                <div class="services">Services</div>
+            </h4>
+
+            <div wicket:id="detail" class="detail">
+                <div class="host">
+                    <span wicket:id="host" class="hostName"></span>
+                </div>
+
+                <div wicket:id="services" class="services"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</wicket:panel>
+
+<wicket:fragment wicket:id="fServicesOneTeam">
+    <span wicket:id="serviceElement">
+        <span wicket:id="service" data-toggle="tooltip" data-placement="bottom"></span>
+    </span>
+</wicket:fragment>
+
+<wicket:fragment wicket:id="fServicesAllTeams">
+    <div wicket:id="teamLine" class="teamLine">
+        <div wicket:id="blueTeam" class="teamNr"></div>
+
+        <div class="contents">
+        <span wicket:id="serviceElement">
+            <span wicket:id="service" data-toggle="tooltip" data-placement="bottom"></span>
+        </span>
+        </div>
+    </div>
+</wicket:fragment>

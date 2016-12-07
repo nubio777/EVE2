@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+
+<head dir="ltr" lang="en">
+
+    <!-- Metas
+   ============================================= -->
+
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+
+
+    <!-- Favicon and title
+    <!--============================================= -->
+
+    <title wicket:id="title">[page title]</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+
+
+    <!-- Stylesheets
+    ============================================= -->
+
+    <!-- Particular css -->
+    <link rel="stylesheet" href="css/dronsys.css">
+
+    <!-- Bootstrap is included in its original form, unaltered -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Related styles of various icon packs and plugins -->
+    <link rel="stylesheet" href="css/plugins.css">
+
+    <!-- The main stylesheet of this page. All Bootstrap overwrites are defined in here -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- The themes stylesheet of this template (for using specific theme color in individual elements - must included last) -->
+    <link rel="stylesheet" href="css/themes.css">
+
+
+    <!-- External JavaScripts
+    ============================================= -->
+
+    <!--JQuery and bootstrap -->
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- Particular javascript, popups, cookie handling, etc.. -->
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/jquery.bpopup.min.js"></script>
+    <script type="text/javascript" src="js/cookieHandling.js"></script>
+
+
+</head>
+
+<body>
+
+<!-- Page Container
+============================================= -->
+<div id="page-container">
+
+
+    <!-- Site Header
+    ============================================= -->
+    <header>
+        <div class="container">
+
+            <!-- Site Logo -->
+            <a href="#" class="site-logo">
+                <i class="gi gi-flash"></i> <strong>D</strong>ronsys
+            </a>
+
+
+            <!-- Main Menu -->
+            <nav>
+                <ul class="site-nav">
+
+                    <li wicket:id="home" class="active">
+                        <a wicket:id="homeLink">HOME</a>
+                    </li>
+
+                    <li wicket:id="shop">
+                        <a wicket:id="shopLink">SHOP</a>
+                    </li>
+
+                    <li wicket:id="blog">
+                        <a wicket:id="blogLink">BLOG</a>
+                    </li>
+
+                    <li wicket:id="contact">
+                        <a wicket:id="contactLink">CONTACT</a>
+                    </li>
+
+                    <li wicket:id="about">
+                        <a wicket:id="aboutLink">ABOUT</a> &nbsp;&nbsp; &nbsp;&nbsp;
+                    </li>
+
+                    <li>
+                        <div wicket:id="greeting" style="margin-top: 7px; color: white;"></div>
+                    </li>
+
+                    <li wicket:id="myAccount">
+                        <a wicket:id="myAccountLink">
+                            <i class="fa fa-pencil-square-o" data-toggle="tooltip" data-placement="right" title="" data-original-title="My account"> My account</i>
+                        </a>
+                    </li>
+
+                    <li wicket:id="myCart">
+                        <a wicket:id="myCartLink">
+                            <i class="fa fa-shopping-cart" data-toggle="tooltip" data-placement="right" title="" data-original-title="My shopping cart"></i> Cart
+                        </a>
+                    </li>
+
+                    <li wicket:id="admin">
+                        <a wicket:id="adminLink">
+                            <i class="gi gi-stopwatch" data-toggle="tooltip" data-placement="right" title="" data-original-title="Backend"></i> Admin
+                        </a>
+                    </li>
+
+                    <li wicket:id="login">
+                        <a wicket:id="loginLink" class="btn btn-primary">Log in</a>
+                    </li>
+
+                    <li wicket:id="logout">
+                        <a wicket:id="logoutLink" class="btn btn-primary">Log out</a>
+                    </li>
+
+                    <li wicket:id="signup">
+                        <a wicket:id="signupLink" class="btn btn-success">Sign Up</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- Main content
+    ============================================= -->
+    <wicket:child/>
+
+
+    <!-- Footer
+  ============================================= -->
+    <footer class="site-footer site-section">
+
+        <div class="container">
+
+            <!--Quick links-->
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <h4 class="footer-heading">Quick help</h4>
+                    <ul class="footer-nav list-inline">
+                        <li><a wicket:id="help">Help Desk</a></li>
+                    </ul>
+                </div>
+
+                <!--Social-->
+                <div class="col-sm-6 col-md-3">
+                    <h4 class="footer-heading">Social</h4>
+                    <ul class="footer-nav footer-nav-social list-inline">
+                        <li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="http://plus.google.com" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="http://dribbble.com" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="https://es.wikipedia.org/wiki/RSS" target="_blank"><i class="fa fa-rss"></i></a></li>
+                    </ul>
+                </div>
+
+                <!--With love-->
+                <div class="col-sm-6 col-md-3">
+                    <h4 class="footer-heading">2016 &copy; <a href="#">Dronsys, Inc.</a></h4>
+                    <ul class="footer-nav list-inline">
+                        <li>Crafted with &nbsp;<i class="fa fa-heart text-danger"></i>&nbsp; by <a href="http://goo.gl/vNS3I">Dronsys</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Popup available for all pages extending this one
+    ============================================= -->
+    <div wicket:id="popup"/>
+
+</div>
+
+
+</body>
+</html>

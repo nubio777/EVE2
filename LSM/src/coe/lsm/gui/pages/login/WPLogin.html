@@ -1,0 +1,87 @@
+<wicket:head>
+    <style>
+        .mainImg {
+            margin: 50px 0 0 50px;
+        }
+
+        .titleLogin {
+            text-align: center;
+            margin: 50px 0 20px 0;
+            color: #286090;
+            font-size: 45px;
+        }
+
+        .subTitleLogin {
+            text-align: center;
+            color: #286090;
+            font-size: 20px;
+        }
+
+        .iconSizeLogin {
+            font-size: 18px;
+            font-weight: bold;
+            font-family: 'Times New Roman', arial, helvetica;
+        }
+
+    </style>
+
+</wicket:head>
+
+<wicket:extend>
+
+    <div class="container">
+
+        <div class="row">
+            &nbsp;
+        </div>
+
+        <div class="row" style="float:none; margin: 0 auto;">
+            <div class="col-md-6">
+                <img src="web/lockedShields.jpg" class="mainImg">
+                <h1 class="titleLogin">Services Status</h1>
+
+                <p class="subTitleLogin">Real time monitoring visualization of services status</p>
+            </div>
+
+            <div class="col-md-offset-1 col-md-4" style="margin: 70px 0 20px 60px;">
+                <form wicket:id="form" class="form-signin" action="/login" method="post">
+
+                    <h2 style="color: #286090">Please, sign in</h2>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon2">
+                          <span class="iconSizeLogin">T</span>
+                        </span>
+                            <input wicket:id="teamNumber" name="team" type="text" class="form-control" placeholder="Team number (or 'green', 'red' or 'white')" aria-describedby="basic-addon2">
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon3">
+                            <span class="iconSizeLogin">P</span>
+                        </span>
+                            <input wicket:id="password" name="pwd" type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon2">
+                        </div>
+                    </div>
+
+                    <div wicket:id="feedback" class="alert alert-danger">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <button wicket:id="submit" class="btn btn-lg btn-primary btn-block componentLogin" type="submit" value="Sign in">Sign in</button>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div wicket:id="popup"></div>
+
+
+</wicket:extend>

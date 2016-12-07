@@ -1,0 +1,35 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="AHR_artifact">
+    <output-path>$PROJECT_DIR$/../out/COE/artifacts/AHR_artifact</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="AHR" />
+          <element id="module-output" name="WUTI" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="wicket 7.1" module-name="WUTI" />
+          <element id="library" level="module" name="driversMySQL" module-name="WUTI" />
+          <element id="library" level="module" name="hibernate_impl" module-name="WUTI" />
+          <element id="library" level="module" name="jpa_def" module-name="WUTI" />
+          <element id="file-copy" path="$PROJECT_DIR$/WUTI/lib/log4j/log4j-1.2.16.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WUTI/lib/log4j/slf4j-api-1.6.4.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WUTI/lib/log4j/slf4j-log4j12-1.6.4.jar" />
+        </element>
+      </element>
+      <element id="file-copy" path="$PROJECT_DIR$/AHR/conf/web.xml" />
+      <element id="directory" name="img">
+        <element id="dir-copy" path="$PROJECT_DIR$/AHR/web/img" />
+      </element>
+      <element id="directory" name="css">
+        <element id="dir-copy" path="$PROJECT_DIR$/AHR/web/css" />
+      </element>
+      <element id="directory" name="jsp">
+        <element id="dir-copy" path="$PROJECT_DIR$/AHR/web/jsp" />
+      </element>
+      <element id="directory" name="js">
+        <element id="dir-copy" path="$PROJECT_DIR$/AHR/web/js" />
+      </element>
+    </root>
+  </artifact>
+</component>

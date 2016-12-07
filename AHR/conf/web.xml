@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+
+    <display-name>AHR Application</display-name>
+
+
+    <!--<security-constraint>-->
+        <!--<web-resource-collection>-->
+            <!--<web-resource-name>Secure URLs</web-resource-name>-->
+            <!--<url-pattern>/*</url-pattern>-->
+        <!--</web-resource-collection>-->
+
+        <!--<user-data-constraint>-->
+            <!--<transport-guarantee>CONFIDENTIAL</transport-guarantee>-->
+        <!--</user-data-constraint>-->
+    <!--</security-constraint>-->
+
+    <session-config>
+        <session-timeout>30</session-timeout>
+        <tracking-mode>COOKIE</tracking-mode>
+    </session-config>
+
+
+    <!--<servlet>-->
+        <!--<servlet-name>prueba</servlet-name>-->
+        <!--<servlet-class>coe.rh1.pru.SPru</servlet-class>-->
+    <!--</servlet>-->
+
+
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>prueba</servlet-name>-->
+        <!--<url-pattern>/pru</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+</web-app>

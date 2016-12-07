@@ -1,0 +1,38 @@
+
+<wicket:head>
+    <!-- Notes: 1) bPopup javascript should be always included after jQuery javascript and 2) Never load more than one jQuery js !-->
+    <!--<link rel="stylesheet" type="text/css" href="web/bpopup/popup.css"/>-->
+</wicket:head>
+
+<wicket:panel>
+
+    <div wicket:id="contenedorInternoPopup" class="popup cerrarpopupc">
+        <div wicket:id="contenidoInternoPopup"></div>
+    </div>
+
+</wicket:panel>
+
+<wicket:fragment wicket:id="fInterno">
+
+    <!--Título-->
+    <div class="tituloPopUp"><span wicket:id="titulo">{Title]</span></div>
+
+    <!--Contenido principal-->
+    <div class="contenidoPrincipalPopupp">
+        <div wicket:id="contenidoPrincipalPopup">El principal del popup</div>
+    </div>
+
+    <!--Botones de cierre-->
+    <div wicket:id="repetidorBotones" class="botonCerrar">
+        <a wicket:id="boton" class="btn btn-primary">
+            <span wicket:id="icono"></span>&nbsp;<span wicket:id="texto"></span>
+        </a>
+    </div>
+
+</wicket:fragment>
+
+
+
+
+
+

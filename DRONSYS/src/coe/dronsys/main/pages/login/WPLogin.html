@@ -1,0 +1,95 @@
+<wicket:head>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/pages/login.js"></script>
+</wicket:head>
+
+
+<wicket:extend>
+
+    <!-- Intro
+============================================= -->
+    <section class="site-section site-section-light site-section-top themed-background-dark">
+        <div class="container">
+            <h1 class="text-center animation-slideDown"><i class="fa fa-arrow-right"></i> <strong>Log in</strong></h1>
+
+            <h2 class="h3 text-center animation-slideUp">Wellcome back</h2>
+        </div>
+    </section>
+
+    <!-- Login
+    ============================================= -->
+    <section class="site-content site-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4 site-block">
+
+
+                    <form wicket:id="form" action="signup.html" method="post" id="form-sign-up" class="form-horizontal">
+
+                        <!-- Email -->
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="gi gi-envelope"></i></span>
+                                    <input wicket:id="email" type="email" id="register-email" name="register-email" class="form-control input-lg"
+                                           placeholder="Email">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Password -->
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="gi gi-asterisk"></i></span>
+                                    <input wicket:id="password" type="password" id="register-password" name="register-password"
+                                           class="form-control input-lg" placeholder="Password">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Captcha Image -->
+                        <!--<div class="form-group">-->
+                            <!--<div class="col-xs-12">-->
+                                <!--<div class="input-group">-->
+                                    <!--<span class="input-group-addon">&nbsp;</span>-->
+                                    <!--<img wicket:id="captchaImage" height="70" width="250">-->
+                                    <!--&nbsp;&nbsp;<a wicket:id="refreshCaptcha">Reload</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                        <!-- Captcha text field -->
+                        <!--<div class="form-group">-->
+                            <!--<div class="col-xs-12">-->
+                                <!--<div class="input-group">-->
+                                    <!--<span class="input-group-addon"><i class="gi gi-asterisk"></i></span>-->
+                                    <!--<input wicket:id="captchaText" type="text" class="form-control input-lg" placeholder="Not a robot?">-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                        <!-- Send -->
+                        <div class="form-group form-actions">
+                            <div class="col-xs-6 text-right">
+                                <button wicket:id="send" type="submit" class="btn btn-sm btn-primary"><i class="fa fa-arrow-right"></i> Log in
+                                </button>
+                            </div>
+                        </div>
+
+                    </form>
+
+                    <div wicket:id="error" class="errorPanel"/>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Stats
+     ============================================= -->
+
+</wicket:extend>

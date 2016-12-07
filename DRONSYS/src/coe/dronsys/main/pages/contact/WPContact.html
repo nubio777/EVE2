@@ -1,0 +1,116 @@
+<wicket:extend>
+
+    <!-- Intro
+    ============================================= -->
+    <section class="site-section site-section-light site-section-top themed-background-dark">
+        <h1 class="text-center animation-slideDown"><i class="fa fa-envelope"></i> <strong>Contact us</strong></h1>
+
+        <h2 class="h3 text-center animation-slideUp">We will be happy to answer all your questions</h2>
+
+        <h3>&nbsp;</h3>
+    </section>
+
+    <!-- Support links
+    ============================================= -->
+    <section class="site-content site-section">
+        <div class="container">
+            <div class="row row-items text-center ">
+
+                <div class="col-sm-4 animation-fadeIn dronsys_row_items">
+                    <a wicket:id="openTicket" class="circle themed-background">
+                        <i class="gi gi-life_preserver"></i>
+                    </a>
+                    <h4>Open a <strong>ticket</strong></h4>
+                </div>
+
+
+                <div class="col-sm-4 animation-fadeIn dronsys_row_items">
+                    <a wicket:id="chatLive" class="circle themed-background">
+                        <i class="fa fa-comments"></i>
+                    </a>
+                    <h4><strong>Chat</strong> Live</h4>
+                </div>
+
+                <div class="col-sm-4 animation-fadeIn dronsys_row_items">
+                    <a href="https://twitter.com/twitter" class="circle themed-background twitter-share-button" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <h4><strong>Tweet</strong> Us</h4>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </section>
+
+
+    <!-- Contact
+    ============================================= -->
+    <section class="site-content site-section">
+        <div class="container">
+            <div class="row">
+
+                <!--Address-->
+                <div class="col-sm-6 col-md-4 site-block">
+                    <div class="site-block">
+                        <h3 class="h3 site-heading"><strong>Dronsys</strong>, Inc.</h3>
+                        <address>
+                            Sky road, 69<br>
+                            21012 Goodylia<br>
+                            <i class="fa fa-phone"></i> 271 828 182 <br>
+                            <i class="fa fa-envelope-o"></i> <a href="javascript:void(0)">info {at} dronsys {dot} ber</a>
+                        </address>
+                    </div>
+
+                    <br>
+
+                    <div class="site-block">
+                        <h3 class="h2 site-heading"><strong>Who</strong> we are</h3>
+
+                        <p class="remove-margin">
+                            In hac habitasse platea dictumst. Proin ac nibh rutrum lectus rhoncus
+                            eleifend. Sed porttitor pretium venenatis. Suspendisse potenti. Aliquam quis ligula elit. Aliquam at orci ac neque
+                            semper dictum. Sed tincidunt scelerisque ligula, et facilisis nulla hendrerit non. Suspendisse potenti.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!--Contact form-->
+                <div class="col-sm-6 col-md-8 site-block">
+
+                    <h3 class="h2 site-heading"><strong>Contact</strong> form</h3>
+
+                    <form wicket:id="form" method="post" id="form-contact">
+
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input wicket:id="name" type="text" id="name" name="nombre" class="form-control input-lg" placeholder="Your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-Mail</label>
+                            <input wicket:id="email" type="email" id="email" name="email" class="form-control input-lg"
+                                   placeholder="Your email address">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea wicket:id="message" id="mensaje" name="message" rows="10" class="form-control input-lg"
+                                      placeholder="Any comments or questions?"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <button wicket:id="send" type="submit" class="btn btn-lg btn-primary">Send message</button>
+                        </div>
+
+                    </form>
+
+                    <div wicket:id="error" class="errorPanel"/>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</wicket:extend>
